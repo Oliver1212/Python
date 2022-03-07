@@ -24,3 +24,43 @@ print(vasarlasDb)
 
 print("5. feladat")
 print("Az első vásárlás sorszáma: " + str(vasarlasDb))
+
+utolsoindex=0
+for i in range(0,len(kosar)):
+    if kosar[i*-1-1]==arunev:
+        utolsoindex=len(kosar)-i
+        break
+darablista=kosar[utolsoindex]
+vasarlasDb=darablista.count("F") + 1
+print("Az utolsó vásárlás sorszáma: " + str(vasarlasDb))
+
+voltF=False
+szam=0
+for e in kosar:
+    if e==arunev:
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
