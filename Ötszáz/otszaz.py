@@ -51,7 +51,7 @@ for e in kosar:
     if e=="F":
         voltF=False
 
-print(szam + "vásárlás során vettek belőle.")
+print(str(szam) + "vásárlás során vettek belőle.")
 
 print("6. feladat")
 print(str(vasarlasDb)+ "darab vételekor fizetendő: " + str(ertek(vasarlasDb)))
@@ -68,8 +68,19 @@ for i in range(0,len(kosar)):
         keresettindex=i
         break
 
-print(kosar(elozoindex:keresettindex))
+print(kosar[elozoindex-1:keresettindex])
+if sorszam>1:
+    darabkosar=kosar[elozoindex+1:keresettindex]
+else:
+    darabkosar=kosar[elozoindex:keresettindex]
+stat={}
+for e in darabkosar:
+    if e in stat.keys():
+        stat[e]+=1
+    else:
+        stat[e]=1
 
+print(stat)
 
 
 
