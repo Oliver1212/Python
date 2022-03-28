@@ -61,21 +61,23 @@ for e in adatok2:
             arany.append(e[0])
 
 for e in arany:
-      print(e)
+      print("\t" + e)
 
 
+#Pythonos megoldás
+print("\n".join(["\t" + e[0] for e in adatok2 if e[2]/(sum(e[1:])) > 0.6]))      
 
+print("7. feladat")
 
+maximum=-1
+maxkat=""
+for e in adatok2:
+      if e[1]>maximum:
+            maximum=e[1]
+            maxkat=e[0]
+print("7. feladat: " + maxkat)
 
+#Pythonos megoldás
 
-
-
-
-
-
-
-
-
-
-
-
+print(max[e[1] for e in adatok2])
+print([e[0] for k in adatok2 if k[1] == max(le[1]) for e in adatok2])
