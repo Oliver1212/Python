@@ -1,4 +1,4 @@
-#1.feladat
+#1.verzió
 
 f=open("naplo.txt")
 adatok=f.read().split("\n")
