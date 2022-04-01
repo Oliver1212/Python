@@ -1,4 +1,5 @@
 #2.verzió
+#1.verzió
 
 f=open("naplo.txt")
 adatok=f.read().split("\n")
