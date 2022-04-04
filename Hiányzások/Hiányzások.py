@@ -20,3 +20,19 @@ for e in adatok:
         temp.append(honap)
         temp.append(nap)
         #név + hiányzás berakása
+        vag=e.split(" ")
+        temp.append(" ".join(vag[0:2]))
+        temp.append(vag[2])
+        naplo.append(temp)
+
+#print(naplo)
+
+print("2. feladat\nA naplóban " + str(len(naplo)) + " hiányzás van.")
+
+igazolt=0
+igazolatlan=0
+for e in naplo:
+    igazolt+=e[3].count("X")
+    igazolatlan+=e[3].count("I")
+    
+igazolt=sum([e[3].count("X") for e in naplo])
