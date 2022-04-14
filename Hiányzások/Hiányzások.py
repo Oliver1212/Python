@@ -92,19 +92,3 @@ print(maximum)
 
 #print(stat)
 #print(max(stat))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

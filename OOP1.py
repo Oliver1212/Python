@@ -6,7 +6,7 @@ class kutya:
         self.nev=nev
     #osztály függvény
     def ugat(self):
-        print("vau-vau(" + self.nev+")")
+        print("Vau-Vau(" + self.nev+")")
 #példányosítás
 k=kutya("Armageddon")
 k.ugat()
@@ -22,7 +22,7 @@ class NemetJuhasz(kutya):
     #függvény felűlírás
     def ugat(self):
         print("wau-wau")
-        
+
 n=NemetJuhasz("Rex")
 n.ugat()
 n.pitiz()
