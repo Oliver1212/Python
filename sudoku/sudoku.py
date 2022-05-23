@@ -1,5 +1,17 @@
 import math
-
+def oszlopban_van_e(oszlop,ertek):
+    for o in tabla:
+        if o[oszlop]==ertek:
+            return True
+        return False
+def resztabla(sor,oszlop):
+    s=math.ceil(sor + 1/3)-1
+    o=math.ceil(oszlop + 1/3)
+    
+    return s * 3 +o
+    print("A hely a(z) [] résztáblázathoz tartozik.".format(s*3+o))
+    
+    
 print("1. feladat:")
 #filenev = input("Adja meg a bemeneti fájl nevét! ")
 #sor = int(input("Adja meg egy sor számát! "))
@@ -53,9 +65,33 @@ print("4. feladat")
 print("Az üres helyek aránya: (:.0)".format(db/81))
 
 for lepes in lepesek:
+    #['9', '2', '4']
+    t_s=int(lepes[1])-1 #temp sor
+    t_u=int(lepes[2])-1 #temp oszlop
+
+    print(resztabla(t_s, t_u))
+
+    volt = False
+    for i in range(0,9):
+        for k in range(0,9):
+            if (resztabla(t_s, t_o)) == (resztabla(i, k)):
+                if tabla[i][k] == lepes[0]:
+                    volt=True    
+    
     print(lepes)
-
-
+    print(tabla[int(lepes[1])-1][int(lepes[2])-1])
+    
+    print(lepes[0] in tabla[int(lepes[1])-1])
+    if (tabla[int(lepes[1])-1][int(lepes[2])-1])!="0":
+        print("A helyet már kitöltötték")
+    elif lepes[0] in tabla[t_s]:
+        print("Az adott sorban már szerepel a szám")
+    elif oszlopban_van_e(t_u,lepes[0]):
+        print("Az adoot oszlopban már szerepel a szám")
+    elif volt:
+        print("Az adott résztáblázatban már szerepel a szám")
+    else:
+        print("A lépés megtehető")
 
 
 
