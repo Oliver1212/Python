@@ -1,8 +1,9 @@
 menu_options = {
-    1: "Menüpont 1",
-    2: "Menüpont 2",
-    3: "Menüpont 3",
-    4: "Kilépés",
+    1: "Autók adatai",
+    2: "Bérlési árak",
+    3: "Bérlések időpontja",
+    4: "Sofőrök adatai",
+    5: "Kilépés",
 }
 
 def menu1():
@@ -13,6 +14,9 @@ def menu2():
 
 def menu3():
     print(menu_options[3])
+
+def menu4():
+    print(menu_options[4])
 
 def print_menu():
     #print(menu_options)
@@ -40,6 +44,8 @@ while (True):
     elif option == 3:
         menu3()
     elif option == 4:
+        menu4()
+    elif option == 5:
         break
     else:
         print("Nincs ilyen menüpont!")
