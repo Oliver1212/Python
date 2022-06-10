@@ -4,7 +4,7 @@ body {
 	background-image: url("dark-wood.jpg");
 	background-position: center;
 	font-family: Georgia, Times, serif;
-	line-height: 1.4em;
+	line-ight: 1.4em;
 	margin: 0px;
 }
 
@@ -37,6 +37,7 @@ nav li {
 
 nav li a {
 	color: #ffffff;
+	display: inline;
 }
 
 nav li a:hover, nav li a.current {
@@ -113,4 +114,31 @@ section.contpage {
 .home {
 	text-align: center;
 	font-size: 20px;
+}
+
+header
+{
+	height: 200px;
+}
+
+article p
+{
+	text-align: justify;
+}
+
+aside
+{
+	width: 230px;
+	padding-left: 20px;
+	float: right;
+}
+
+aside a
+{
+	color: #de6581;
+	text-decoration: none;
+}
+
+h1,h2,h3{
+	font-weight: normal;
 }
